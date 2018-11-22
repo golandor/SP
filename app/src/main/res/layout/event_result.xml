@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImageEventRegistered"
+        android:src="@drawable/profileimage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/fullNameOnEventRegistered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emailAdrressOnEventRegistered"
+        android:layout_alignStart="@+id/emailAdrressOnEventRegistered"
+        android:text="@string/username"
+        android:textColor="#555555"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/emailAdrressOnEventRegistered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/profileImageEventRegistered"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/profileImageEventRegistered"
+        android:text="@string/e_mail_address"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

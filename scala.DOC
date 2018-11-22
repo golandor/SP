@@ -1,0 +1,8 @@
+
+def inversFun[A](f: A => Int, mylist: List[A], v: Int): Option[A] = {
+      for (x <- mylist if f(x) == v) {
+        return Some(x)
+      }
+      return None
+	{
+    אין שימוש ב pattern matching ניקוד 7/14    
